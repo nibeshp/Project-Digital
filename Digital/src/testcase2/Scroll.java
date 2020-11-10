@@ -27,7 +27,7 @@ public class Scroll {
 		
 		//Click on 
 		driver.findElement(By.xpath("//*[@id=\"content\"]/ul/li[26]/a")).click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		
 		//scroll down
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -39,7 +39,7 @@ public class Scroll {
 		//Assert Infinite Scroll Text
 		
 		Assert.assertEquals(actualtext, expectedtext);
-		System.out.println("Text present");
+		//System.out.println("Text present");
 		
 		
 	   // if(driver.getPageSource().contains("Infinite Scroll")) {
